@@ -38,6 +38,7 @@ public class PhysExamSearch {
 		
 		public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
+			// 순서 정렬이 필요하다.
 			PhyscData[]x = {
 					new PhyscData("가",161,0.3),
 					new PhyscData("나",165,0.1),
