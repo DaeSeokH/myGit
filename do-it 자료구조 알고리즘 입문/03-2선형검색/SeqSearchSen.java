@@ -11,7 +11,7 @@ public class SeqSearchSen {
 	static int seqSearch(int[]a, int n, int key) { // 배열 a , 요솟수 n, 값 key
 		int i = 0; // 인덱스
 		
-		a[n] = key; // ****보초 추가****
+		a[n] = key; // ****보초 추가**** , while 문에서 if 조건문을 줄일 수 있다.
 		
 		while(true) {		
 			if(a[i] == key) // 검색 성공
