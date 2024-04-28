@@ -39,9 +39,9 @@ public class IntArrayQueue {
 	public int deque() throws EmptyIntArrayQueueException {
 		if (num <= 0)
 			throw new EmptyIntArrayQueueException();				// 큐가 비어 있음
-		int x = que[0];
+		int x = que[0]; // 선입 선출
 		for (int i = 0; i < num - 1; i++)
-			que[i] = que[i + 1];
+			que[i] = que[i + 1]; // 값을 하나씩 앞으로 땡긴다.
 		num--;
 		return x;
 	}
