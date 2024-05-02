@@ -1,7 +1,7 @@
 //링 버퍼로 큐 만들기
 
 public class IntQueue {
-	private int[] que; // 큐 배열, 본체 참조 변수
+	private int[] que; // 큐 배열, 본체 참조 변수, 배열 본체는 생성자로 생성
 	private int capacity; // 큐 용량
 	private int front; // 맨 앞의 요소 커서, 데이터가 나오는 쪽, 맨 앞 요소의 인덱스
 	private int rear; // 맨 뒤의 요소 커서, 데이터를 넣는 쪽, 맨 뒤에 넣은 요소 하나 뒤 인덱스, 인큐 데이터 저장될 요소 인덱스 미리 준비
