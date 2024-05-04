@@ -75,6 +75,14 @@ public class IntQueue {
 		return -1;				// 검색 실패
 	}
 
+	//큐에서 x를 검색하여 맨앞에서 몇 번째인가를 반환, 발견하지 못하면 0
+	public int search(int x) {
+		for (int i = 0; i < num; i++)
+			if (que[(i + front) % capacity]  == x)	// 검색 성공
+				return i + 1;
+		return 0;								// 검색 실패
+	}
+
 	// 큐의 용량
 	public int getCapacity() {
 		return capacity;
